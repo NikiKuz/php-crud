@@ -13,6 +13,7 @@ if(!empty($_POST)){
   ]);
   if($id){
     echo 'User created';
+    header("Location: /?app=users&view=list");
   }
   else{
     echo 'Error';

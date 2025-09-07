@@ -13,7 +13,6 @@ if (!$user) {
     die("User not found.");
 }
 
-// Автоматическое удаление и редирект
 delete('users', $userId);
 header("Location: /?app=users&view=list");
 exit();
